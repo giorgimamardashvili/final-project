@@ -1,0 +1,193 @@
+.header {
+  background: linear-gradient(
+      #242424 0%,
+      rgba(47, 47, 47, 0.47) 51.72%,
+      #1e1e1e 85.71%,
+      $primary 100%
+    ),
+    url(../images/queen.jpg) center/cover no-repeat;
+  // background-image: url(../images/queen.jpg);
+  width: 100%;
+  height: 93.6rem;
+
+  @include sm {
+    background-position: right;
+  }
+
+  &__content {
+    padding: 0 2rem 0 2rem;
+  }
+}
+
+.top-head {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0 3rem 0;
+  align-items: center;
+  height: 11rem;
+
+  &__main {
+    display: flex;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+    }
+
+    span {
+      font-weight: 800;
+      font-size: 2.2rem;
+      text-align: left;
+      color: $yellow;
+      margin-left: 3.3rem;
+      cursor: pointer;
+    }
+  }
+
+  &__search {
+    width: 49%;
+    height: 100%;
+
+    form {
+      display: flex;
+      height: 100%;
+    }
+
+    input {
+      width: 89%;
+      height: 100%;
+      background: rgba(96, 96, 96, 0.2);
+      border: 1px solid #303030;
+      padding: 0 3rem;
+      font-weight: 600;
+      font-size: 1.6rem;
+      color: #ccc;
+    }
+
+    button {
+      height: 100%;
+      width: 11%;
+      background: rgba(96, 96, 96, 0.2);
+      border: 1px solid #303030;
+
+      img {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+
+  &__sign {
+    height: 100%;
+    display: flex;
+    width: 12rem;
+    justify-content: space-between;
+    a {
+      width: 5rem;
+      height: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(47, 47, 47, 0.6);
+      border: 1px solid #2f2f2f;
+      border-radius: 50%;
+      font-weight: 500;
+      font-size: 1.4rem;
+      color: $white;
+      text-decoration: none;
+    }
+
+    img {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+}
+
+.burger {
+  height: 1.6rem;
+  width: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  div {
+    height: 0.2rem;
+    background: #ccc;
+    width: 100%;
+  }
+}
+
+.bottom-head {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17rem;
+  align-items: center;
+
+  img {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  a {
+    @include m2 {
+      margin-right: 8rem;
+    }
+  }
+
+  &__text {
+    width: 49%;
+
+    @include rwd(550) {
+      width: 70%;
+    }
+
+    h1 {
+      font-weight: 500;
+      font-size: 4.4rem;
+
+      @include rwd(359) {
+        font-size: 3.3rem;
+      }
+    }
+
+    span {
+      font-weight: 500;
+      font-size: 2.4rem;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 1.4rem;
+
+      @include m2 {
+        display: none;
+      }
+    }
+  }
+}
+
+.spinner {
+  display: flex;
+  justify-content: space-between;
+  width: 15rem;
+  margin: 0 auto;
+  margin-top: 9.5rem;
+
+  @include m2 {
+    margin-top: 22.5rem;
+  }
+
+  a {
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    background-color: #ccc;
+  }
+}
+
+.head {
+  height: 11rem;
+  background-color: #242424;
+  background-image: none;
+}

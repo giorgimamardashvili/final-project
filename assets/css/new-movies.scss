@@ -1,0 +1,38 @@
+.new-movies {
+  margin-top: 9rem;
+
+  &__text {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      font-weight: 600;
+      font-size: 2.2rem;
+    }
+
+    button {
+      font-weight: 600;
+      font-size: 1.4rem;
+      color: $yellow;
+      text-decoration: none;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  &__carousel {
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+
+  &__item {
+    // &:nth-child(7),
+    &:nth-child(4n) {
+      @include m2 {
+        display: none;
+      }
+    }
+  }
+}

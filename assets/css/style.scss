@@ -1,0 +1,69 @@
+@import "vars";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+
+  @include xl {
+    font-size: 50%;
+  }
+
+  @include lg {
+    font-size: 40%;
+  }
+
+  @include m {
+    font-size: 35%;
+  }
+
+  @include sm {
+    font-size: 33%;
+  }
+}
+
+body {
+  background-color: $primary;
+  font-size: 1.4rem;
+  color: $white;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 148rem;
+  margin: auto;
+
+  @include m {
+    padding: 0 4rem;
+    width: 100%;
+  }
+}
+
+@import "header";
+@import "main";
+@import "carousel";
+@import "most-watched";
+@import "continue-watching";
+@import "new-movies";
+@import "new-series";
+@import "collection";
+@import "center";
+@import "footer";
+
+.swiper-slide {
+  flex-shrink: 0;
+}
+.most-watched__arrow {
+  button {
+    outline: none;
+  }
+}
