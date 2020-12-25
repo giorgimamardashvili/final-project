@@ -9,6 +9,7 @@ for (let i = 0; i < continueArr.length; i++) {
                         <div class="carousel__top">
                             <img src="${currentItem.image}" alt="">
                             <div class="season-time"><span class="season-time__text">${currentItem.season}</span></div>
+                            <div class="bar"><div class="bar__yellow"></div></div>
                         </div>
                         <div class="carousel__bottom">
                             <div class="carousel__text">
