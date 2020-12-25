@@ -3,12 +3,12 @@ const continueWatch = document.querySelector(".continue-watching__carousel");
 for (let i = 0; i < continueArr.length; i++) {
   const currentItem = continueArr[i];
   const continueItem = document.createElement("div");
-  continueItem.classList.add("most-watched__item");
+  continueItem.classList.add("continue-watching__item");
   continueItem.classList.add("carousel__item");
   continueItem.innerHTML = `
                         <div class="carousel__top">
                             <img src="${currentItem.image}" alt="">
-                        
+                            <div class="season-time"><span class="season-time__text">${currentItem.season}</span></div>
                         </div>
                         <div class="carousel__bottom">
                             <div class="carousel__text">

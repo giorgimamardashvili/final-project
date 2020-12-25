@@ -17,7 +17,7 @@ const newSeries = (counter) => {
     nsItem.innerHTML = `
                       <div class="carousel__top">
                           <img src="${currentItem.image}" alt="">
-                      
+                          <div class="season-time"><span class="season-time__text">${currentItem.season}</span></div>
                       </div>
                       <div class="carousel__bottom">
                           <div class="carousel__text">

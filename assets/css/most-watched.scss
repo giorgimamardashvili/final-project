@@ -15,6 +15,7 @@
       background: transparent;
       border: none;
       cursor: pointer;
+      outline: none;
     }
 
     @include rwd(690) {
@@ -77,10 +78,6 @@
 
   &__wrapper {
     display: flex;
-    // justify-content: space-between;
-    // left: 0;
-    // position: relative;
-    // transition: all ease 1s;
   }
 
   &__item {

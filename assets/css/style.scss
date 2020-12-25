@@ -62,8 +62,19 @@ body {
 .swiper-slide {
   flex-shrink: 0;
 }
-.most-watched__arrow {
-  button {
-    outline: none;
+
+.season-time {
+  position: absolute;
+  height: 3.3rem;
+  top: 2rem;
+  left: 2rem;
+  background: $primary;
+  padding: 0.5rem 1rem;
+
+  &__text {
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-align: center;
+    color: $white;
   }
 }
