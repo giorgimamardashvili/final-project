@@ -437,6 +437,7 @@ body {
   background: transparent;
   border: none;
   cursor: pointer;
+  outline: none;
 }
 
 .most-watched__filter button:hover {
