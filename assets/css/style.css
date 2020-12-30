@@ -39,9 +39,14 @@ body {
   color: #ffffff;
 }
 
-.page {
+.page, .page-form {
   display: flex;
   flex-direction: column;
+}
+
+.page-form {
+  height: 100vh;
+  justify-content: space-between;
 }
 
 .container {
@@ -124,6 +129,7 @@ body {
   width: 11%;
   background: rgba(96, 96, 96, 0.2);
   border: 1px solid #303030;
+  cursor: pointer;
 }
 
 .top-head__search button img {
@@ -416,6 +422,12 @@ body {
   justify-content: space-between;
 }
 
+@media (max-width: 350px) {
+  .most-watched__filter {
+    width: 23.5rem;
+  }
+}
+
 .most-watched__filter button {
   font-weight: 600;
   font-size: 1.6rem;
@@ -462,8 +474,32 @@ body {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 440px) {
+  .continue-watching__item {
+    width: 45%;
+  }
+}
+
+@media (max-width: 350px) {
+  .continue-watching__item {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 850px) {
   .continue-watching__item:last-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .continue-watching__item:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (max-width: 350px) {
+  .continue-watching__item:nth-child(2) {
     display: none;
   }
 }
@@ -503,8 +539,32 @@ body {
   align-content: space-around;
 }
 
+@media screen and (max-width: 440px) {
+  .new-movies__item {
+    width: 45%;
+  }
+}
+
+@media (max-width: 350px) {
+  .new-movies__item {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 850px) {
   .new-movies__item:nth-child(4n) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .new-movies__item:nth-child(3n) {
+    display: none;
+  }
+}
+
+@media (max-width: 350px) {
+  .new-movies__item:nth-child(2n) {
     display: none;
   }
 }
@@ -539,8 +599,32 @@ body {
   align-content: space-around;
 }
 
+@media screen and (max-width: 440px) {
+  .new-series__item {
+    width: 45%;
+  }
+}
+
+@media (max-width: 350px) {
+  .new-series__item {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 850px) {
-  .new-series__item:last-child {
+  .new-series__item:nth-child(4n) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .new-series__item:nth-child(3n) {
+    display: none;
+  }
+}
+
+@media (max-width: 350px) {
+  .new-series__item:nth-child(2n) {
     display: none;
   }
 }

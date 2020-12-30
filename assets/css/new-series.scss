@@ -28,8 +28,28 @@
   }
 
   &__item {
-    &:last-child {
+    @include sm {
+      width: 45%;
+    }
+
+    @include rwd(350) {
+      width: 100%;
+    }
+
+    &:nth-child(4n) {
       @include m2 {
+        display: none;
+      }
+    }
+
+    &:nth-child(3n) {
+      @include sm {
+        display: none;
+      }
+    }
+
+    &:nth-child(2n) {
+      @include rwd(350) {
         display: none;
       }
     }

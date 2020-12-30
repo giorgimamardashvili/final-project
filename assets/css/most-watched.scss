@@ -56,6 +56,10 @@
     display: flex;
     justify-content: space-between;
 
+    @include rwd(350) {
+      width: 23.5rem;
+    }
+
     button {
       font-weight: 600;
       font-size: 1.6rem;

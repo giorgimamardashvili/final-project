@@ -9,8 +9,28 @@
   }
 
   &__item {
+    @include sm {
+      width: 45%;
+    }
+
+    @include rwd(350) {
+      width: 100%;
+    }
+
     &:last-child {
       @include m2 {
+        display: none;
+      }
+    }
+
+    &:nth-child(3) {
+      @include sm {
+        display: none;
+      }
+    }
+
+    &:nth-child(2) {
+      @include rwd(350) {
         display: none;
       }
     }

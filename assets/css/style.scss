@@ -38,6 +38,12 @@ body {
   flex-direction: column;
 }
 
+.page-form {
+  @extend .page;
+  height: 100vh;
+  justify-content: space-between;
+}
+
 .container {
   max-width: 148rem;
   margin: auto;
