@@ -712,6 +712,12 @@ body {
   padding: 7.5rem 13.5rem;
 }
 
+@media (max-width: 390px) {
+  .center__content {
+    padding: 7.5rem 6.75rem;
+  }
+}
+
 .center__right {
   width: 30.73%;
   background: radial-gradient(rgba(23, 23, 23, 0.9) 8%, #171717 90%), url(../../assets/images/the-avangers.jpg) center/cover no-repeat;

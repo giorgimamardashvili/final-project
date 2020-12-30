@@ -9,6 +9,10 @@
 
   &__content {
     padding: 7.5rem 13.5rem;
+
+    @include rwd(390) {
+      padding: 7.5rem 6.75rem;
+    }
   }
 
   &__right {
